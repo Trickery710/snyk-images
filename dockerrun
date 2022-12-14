@@ -1,0 +1,5 @@
+
+
+#security scan of doccker image
+docker run --rm -it  -v /var/run/docker.sock:/var/run/docker.sock snyk/snyk:docker snyk test --docker <imagename>
+docker run --rm -it  -v /var/run/docker.sock:/var/run/docker.sock snyk/snyk:docker snyk test --docker

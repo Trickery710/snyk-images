@@ -1,0 +1,9 @@
+#!/bin/sh
+docker run --rm -it  \
+	-e SNYK_TOKEN={your token from snyk website} \
+	-v /var/run/docker.sock:/var/run/docker.sock snyk/snyk:docker snyk test --docker "$@"
+
+
+
+### add snyk token and cp to snyk-docker.sh
+# cp ./snyk-docker.sh.bkk ./snyk-docker.sh
