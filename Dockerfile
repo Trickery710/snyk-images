@@ -6,7 +6,7 @@ ENV MAVEN_CONFIG="" \
     SNYK_INTEGRATION_NAME="DOCKER_SNYK" \
     SNYK_INTEGRATION_VERSION=${TAG} \
     SNYK_CFG_DISABLESUGGESTIONS=true
-    SNYK_TOKEN=257bf509-d5d5-46dd-9f1e-d138dc87dace
+
 WORKDIR /app
 COPY docker-entrypoint.sh /usr/local/bin/
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]

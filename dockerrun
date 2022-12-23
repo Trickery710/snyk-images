@@ -2,4 +2,4 @@
 
 #security scan of doccker image
 docker run --rm -it  -v /var/run/docker.sock:/var/run/docker.sock snyk/snyk:docker snyk test --docker <imagename>
-docker run --rm -it  -v /var/run/docker.sock:/var/run/docker.sock snyk/snyk:docker snyk test --docker
+docker run --rm -it -e SNYK_TOKEN=257bf509-d5d5-46dd-9f1e-d138dc87dace -v /var/run/docker.sock:/var/run/docker.sock snyk/snyk:docker snyk test --docker
